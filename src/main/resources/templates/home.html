@@ -6,7 +6,9 @@
 </head>
 
 <body>
-	<header th:replace="~{/partials/pieces :: navbar}"></header>
+	<header th:replace="~{/partials/pieces :: navbar}">
+		<i class="bi bi-bag"></i>
+	</header>
 	<main class="container">
 		<div th:if="${session.usuarioLogado}">
 			<p th:utext="${session.usuarioLogado.getNome()}"></p>
@@ -19,7 +21,7 @@
 						1</a> <a class="nav-link text-dark" href="#coxinhas2">Tipo de
 						Produto 2</a> <a class="nav-link text-dark" href="#produto3">Tipo
 						de Produto 3</a> <a class="nav-link text-dark" href="#produto4">Tipo
-						de Produto 4</a>
+						de Produto 4</a>   
 				</nav>
 			</div>
 		</div>
@@ -35,13 +37,15 @@
 					<div class="produto" data-bs-toggle="modal"
 						data-bs-target="#coxFrango">
 						<div class="info-prod">
-							<div class="nome-prod">Coxinha de Frango</div>
+							<label for="" class="form-label">Coxinha Frango</label> <input type="text"
+						  class="form-control" required>
 							<div class="descricao-prod">Lorem ipsum dolor sit amet
 								consectetur adipisicing elit. Itaque, modi architecto? Sint,
 								animi.Sequi quibusdam assumenda recusandae quidem quia?
 								Consectetur quasi porro praesentium
 								ameteiustestetestecoxinhafrango</div>
-							<div class="preco-prod">R$5,00</div>
+								<label for="" class="form-label">preço</label> <input type="text"
+								 class="form-control" required>
 						</div>
 						<div>
 							<img
@@ -172,6 +176,8 @@
 		</section>
 		<br />
 		<!-- Modal produtos-->
+
+
 		<div>
 			<form action="">
 				<div class="modal fade" id="coxFrango" tabindex="-1"
@@ -191,57 +197,11 @@
 								<img class="img-fluid"
 									src="https://rdironworks.com/wp-content/uploads/2017/12/dummy-200x200.png" />
 							</div>
-							<div class="modal-body">
+								
 								<div class="row align-items-start">
 									<div class="col">
-										<h5>Sachê de ketchup</h5>
-									</div>
-									<div class="col">
-										<button type="button" class="input-qtd bg-danger"
-											id="decrementar1" onclick="mudar1(this)">
-											<strong>-</strong>
-										</button>
-										<input class="input-compras" id="input-add1" type="number"
-											min="1" step="1" value="1" />
-										<button id="incrementar-add1" class="input-qtd bg-success"
-											onclick="mudar1(this)">
-											<strong>+</strong>
-										</button>
-									</div>
-								</div>
-								<div class="row align-items-start">
-									<div class="col">
-										<h5>Sachê de maionese</h5>
-									</div>
-									<div class="col">
-										<button type="button" class="input-qtd bg-danger"
-											id="decrementar2" onclick="mudar2(this)">
-											<strong>-</strong>
-										</button>
-										<input class="input-compras" id="input-add2" type="number"
-											min="1" step="1" value="1" />
-										<button id="incrementar-add2" class="input-qtd bg-success"
-											onclick="mudar2(this)">
-											<strong>+</strong>
-										</button>
-									</div>
-								</div>
-								<div class="row align-items-start">
-									<div class="col">
-										<h5>Sachê de mostarda</h5>
-									</div>
-									<div class="col">
-										<button type="button" class="input-qtd bg-danger"
-											id="decrementar3" onclick="mudar3(this)">
-											<strong>-</strong>
-										</button>
-										<input class="input-compras" id="input-add3" type="number"
-											min="1" step="1" value="1" />
-										<button id="incrementar-add3" class="input-qtd bg-success"
-											onclick="mudar3(this)">
-											<strong>+</strong>
-										</button>
-									</div>
+									<h5 id="local">local :</h5>	<h4>IFPE-JB.cantina</h5>
+									
 								</div>
 								<div>
 									<label for="message-text" class="col-form-label">Observações:</label>
@@ -255,14 +215,16 @@
 										<strong>-</strong>
 									</button>
 									<input class="input-compras" id="input-numb" type="number"
-										min="1" step="1" value="1" />
+										min="1" step="10" value="1" />
 									<button id="incrementar" class="input-qtd bg-success"
 										onclick="mudar(this)">
 										<strong>+</strong>
 									</button>
 								</div>
+
+								
 								<div>
-									<button type="button" class="btn btn-success input-compras">
+									<button type="submit" class="btn btn-success input-compras">
 										Adicionar</button>
 								</div>
 							</div>
