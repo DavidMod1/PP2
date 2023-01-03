@@ -37,15 +37,13 @@
 					<div class="produto" data-bs-toggle="modal"
 						data-bs-target="#coxFrango">
 						<div class="info-prod">
-							<label for="" class="form-label">Coxinha Frango</label> <input type="text"
-						  class="form-control" required>
+							<div class="nome-prod" th:object="${nome}"  >coxinha Queijo</div>
 							<div class="descricao-prod">Lorem ipsum dolor sit amet
 								consectetur adipisicing elit. Itaque, modi architecto? Sint,
 								animi.Sequi quibusdam assumenda recusandae quidem quia?
 								Consectetur quasi porro praesentium
 								ameteiustestetestecoxinhafrango</div>
-								<label for="" class="form-label">preço</label> <input type="text"
-								 class="form-control" required>
+								<div class="preco-prod" th:field="*{preco}"> R$5,00 </div>
 						</div>
 						<div>
 							<img
@@ -55,13 +53,13 @@
 					</div>
 					<div class="produto">
 						<div class="info-prod">
-							<div class="nome-prod">Coxinha de Queijo</div>
+							<div class="nome-prod" th:field="*{nome}">Coxinha de Queijo</div>
 							<div class="descricao-prod">Lorem ipsum dolor sit amet
 								consectetur adipisicing elit. Itaque, modi architecto? Sint,
 								animi. Sequi quibusdam assumenda recusandae quidem quia?
 								Consectetur quasi porro praesentium amet
 								eiustestetestecoxinhafrango</div>
-							<div class="preco-prod">R$5,00</div>
+							<div class="preco-prod" th:field="*{preco}">R$5,00</div>
 						</div>
 						<div>
 							<img
@@ -71,13 +69,13 @@
 					</div>
 					<div class="produto">
 						<div class="info-prod">
-							<div class="nome-prod">Coxinha de Camarão</div>
+							<div class="nome-prod" th:field="*{nome}">Coxinha de Camarão</div>
 							<div class="descricao-prod">Lorem ipsum dolor sit amet
 								consectetur adipisicing elit. Itaque, modi architecto? Sint,
 								animi.Sequi quibusdam assumenda recusandae quidem quia?
 								Consectetur quasi porro praesentium
 								ameteiustestetestecoxinhafrango</div>
-							<div class="preco-prod">R$5,00</div>
+							<div class="preco-prod" th:field="*{preco}">R$5,00</div>
 						</div>
 						<div>
 							<img
@@ -87,13 +85,13 @@
 					</div>
 					<div class="produto">
 						<div class="info-prod">
-							<div class="nome-prod">Coxinha de Ovo</div>
+							<div class="nome-prod" th:field="*{nome}">Coxinha de Ovo</div>
 							<div class="descricao-prod">Lorem ipsum dolor sit amet
 								consectetur adipisicing elit. Itaque, modi architecto? Sint,
 								animi. Sequi quibusdam assumenda recusandae quidem quia?
 								Consectetur quasi porro praesentium amet
 								eiustestetestecoxinhafrango</div>
-							<div class="preco-prod">R$5,00</div>
+							<div class="preco-prod" th:field="*{preco}">R$5,00</div>
 						</div>
 						<div>
 							<img
@@ -109,13 +107,13 @@
 				<div class="div-produto">
 					<div class="produto">
 						<div class="info-prod">
-							<div class="nome-prod">Coxinha de Frango</div>
+							<div class="nome-prod" th:field="*{nome}">Coxinha de Frango</div>
 							<div class="descricao-prod">Lorem ipsum dolor sit amet
 								consectetur adipisicing elit. Itaque, modi architecto? Sint,
 								animi.Sequi quibusdam assumenda recusandae quidem quia?
 								Consectetur quasi porro praesentium
 								ameteiustestetestecoxinhafrango</div>
-							<div class="preco-prod">R$5,00</div>
+							<div class="preco-prod" th:field="*{nome}">R$5,00</div>
 						</div>
 						<div>
 							<img
@@ -125,13 +123,13 @@
 					</div>
 					<div class="produto">
 						<div class="info-prod">
-							<div class="nome-prod">Coxinha de Queijo</div>
+							<div class="nome-prod" th:field="*{nome}">Coxinha de Queijo</div>
 							<div class="descricao-prod">Lorem ipsum dolor sit amet
 								consectetur adipisicing elit. Itaque, modi architecto? Sint,
 								animi. Sequi quibusdam assumenda recusandae quidem quia?
 								Consectetur quasi porro praesentium amet
 								eiustestetestecoxinhafrango</div>
-							<div class="preco-prod">R$5,00</div>
+							<div class="preco-prod" th:field="*{nome}">R$5,00</div>
 						</div>
 						<div>
 							<img
@@ -141,13 +139,13 @@
 					</div>
 					<div class="produto">
 						<div class="info-prod">
-							<div class="nome-prod">Coxinha de Camarão</div>
+							<div class="nome-prod" th:field="*{nome}">Coxinha de Camarão</div>
 							<div class="descricao-prod">Lorem ipsum dolor sit amet
 								consectetur adipisicing elit. Itaque, modi architecto? Sint,
 								animi.Sequi quibusdam assumenda recusandae quidem quia?
 								Consectetur quasi porro praesentium
 								ameteiustestetestecoxinhafrango</div>
-							<div class="preco-prod">R$5,00</div>
+							<div class="preco-prod" th:field="*{nome}">R$5,00</div>
 						</div>
 						<div>
 							<img
@@ -157,13 +155,13 @@
 					</div>
 					<div class="produto">
 						<div class="info-prod">
-							<div class="nome-prod">Coxinha de Ovo</div>
+							<div class="nome-prod" th:field="*{nome}">Coxinha de Ovo</div>
 							<div class="descricao-prod">Lorem ipsum dolor sit amet
 								consectetur adipisicing elit. Itaque, modi architecto? Sint,
 								animi. Sequi quibusdam assumenda recusandae quidem quia?
 								Consectetur quasi porro praesentium amet
 								eiustestetestecoxinhafrango</div>
-							<div class="preco-prod">R$5,00</div>
+							<div class="preco-prod" th:field="*{nome}">R$5,00</div>
 						</div>
 						<div>
 							<img
